@@ -18,12 +18,56 @@ body {
     height: 40px;
 }
 
-.topnav a {
-    color: #f2f2f2;
-    padding: 16px 16px;
-    text-decoration: none;
+.hamburger-button {
+    background: none;
+    border: none;
     font-size: 24px;
+    cursor: pointer;
 }
+
+.hamburger-menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-button{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-content a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.menu-content {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    display: none;
+    right: 0;
+}
+
+.menu-content.show .close-button{
+    display: block;
+}
+
+.menu-content.show{
+    display: block;
+}
+
+
 
 .footer {
     background-color: rgb(30, 30, 30);
